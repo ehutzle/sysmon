@@ -75,6 +75,14 @@ monitoring experience.
 
 ---
 
+---
+
+## TODO
+
+- Adjust Scales for Historical Charts
+
+---
+
 ## Keybindings
 
 - **Ctrl+C:** Quit the application safely.
