@@ -44,6 +44,10 @@ public class LanternaSystemMonitor {
     private static final TextColor BAR_MED = new TextColor.RGB(200, 180, 50);
     private static final TextColor BAR_HIGH = new TextColor.RGB(180, 50, 50);
 
+    // Buffer
+    private static BufferedReader iostatReader;
+    private static boolean iostatInitialized = false;
+
     /**
      * Main entry point for the system monitor application.
      * Initializes the terminal and continuously updates system stats while handling user input.
@@ -313,8 +317,6 @@ public class LanternaSystemMonitor {
     }
 
     // ========================= System Stats Functions ========================= //
-    private static BufferedReader iostatReader;
-    private static boolean iostatInitialized = false;
 
     /**
      * Initializes disk statistics collection using `iostat`.
